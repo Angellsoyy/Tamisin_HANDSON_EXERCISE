@@ -1,0 +1,40 @@
+<html lang="en">
+
+</head>
+<body>
+    <script>
+    var a = prompt ("please input the first number side: ");
+    var b = prompt ("please input the second number side: ");
+    var c = prompt ("please input the third number side: "); 
+
+    var bool = isNaN(a,b,c);
+
+    if(bool == false){
+    determine(a,b,c);
+ }
+
+    function determine (a,b,c)
+    {
+      if(a == b == c)
+     {window.alert("The Triangle is EQUILATERAL")} 
+    else if (a == b && a!=c && b!=c )
+     {window.alert("The triangle is ISOCSCELES")}
+     else if (a == c && a!=b && b!=c )
+     {window.alert("The triangle is ISOCSCELES")}
+     else if (c == b && a!=c && b!=a )
+     {window.alert("The triangle is ISOCSCELES")}
+     else{window.alert("The triangle is SCALENE")}
+    }
+
+    
+
+    
+
+    </script>
+</body>
+  
+</head>
+
+</html>
+
+
